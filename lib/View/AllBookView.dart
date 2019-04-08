@@ -24,7 +24,7 @@ class _AllBookView extends State<AllBookView> implements IAllBookView{
   @override
   void initState() {
     super.initState();
-    _presenter.init(this);
+    _presenter.attach(this);
     _presenter.getHttpData();
   }
 

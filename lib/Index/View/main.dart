@@ -5,7 +5,7 @@ import 'package:micro_sparrow/Utils/SparrowException.dart';
 import 'package:micro_sparrow/View/AllBookView.dart';
 import 'package:micro_sparrow/View/AllDocView.dart';
 import 'package:micro_sparrow/View/BookView.dart';
-import 'package:micro_sparrow/View/IMainView.dart';
+import 'package:micro_sparrow/Index/Contract/IMainView.dart';
 import 'package:micro_sparrow/View/NotificationView.dart';
 import 'package:micro_sparrow/View/TeamView.dart';
 import 'package:micro_sparrow/View/UserView.dart';
@@ -17,7 +17,7 @@ import 'package:micro_sparrow/model/Notification_entity.dart';
 import 'package:micro_sparrow/model/ThirdData_entity.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:micro_sparrow/model/UserInfo_entity.dart';
-import 'package:micro_sparrow/presenter/MainViewPresenter.dart';
+import 'package:micro_sparrow/Index/Presenter/MainViewPresenter.dart';
 
 
 
@@ -42,16 +42,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   final String title;
 
 
@@ -88,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    _presenter.init(this);
+    _presenter.attach(this);
     _userinfoEntity.initData();
     _presenter.getEventHttpData();
     _presenter.getNotification();

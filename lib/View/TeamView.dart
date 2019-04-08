@@ -29,7 +29,7 @@ class _teamPage extends State<TeamView> implements ITeamView{
   @override
   void initState() {
     super.initState();
-    presenter.init(this);
+    presenter.attach(this);
     presenter.getTeamHttpData();
   }
 

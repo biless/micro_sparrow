@@ -10,7 +10,7 @@ class NotificationPresenter extends AbsPresenter implements IPresenter{
   INotificationView _view;
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this._view = view;
   }
 

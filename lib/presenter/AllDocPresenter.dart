@@ -14,7 +14,7 @@ class AllDocPresenter implements IPresenter{
 
 
   @override
-  init(IView view) {
+  attach(IView view) {
     _view = view;
   }
 

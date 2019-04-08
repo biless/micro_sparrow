@@ -16,7 +16,7 @@ class EditPresenter extends AbsPresenter implements IPresenter{
 
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this._view = view;
   }
 

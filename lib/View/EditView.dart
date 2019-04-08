@@ -73,7 +73,7 @@ class _EditPage extends State<EditView> implements IEditView {
   @override
   void initState() {
     super.initState();
-    _presenter.init(this);
+    _presenter.attach(this);
     _initData();
   }
 

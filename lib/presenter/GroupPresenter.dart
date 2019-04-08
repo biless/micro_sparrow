@@ -12,7 +12,7 @@ class GroupPresenter implements IPresenter{
   IGroupView view;
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this.view = view;
   }
 

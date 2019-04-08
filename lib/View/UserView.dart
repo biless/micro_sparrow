@@ -34,7 +34,7 @@ class _UserView extends State<UserView> implements IUserView{
   @override
   void initState() {
     super.initState();
-    _presenter.init(this);
+    _presenter.attach(this);
     _presenter.getUserData(widget.id);
     _presenter.getBooksData(widget.id, 0, 20);
     _presenter.getFollowUser(widget.id, "0");

@@ -15,7 +15,7 @@ class UserPresenter extends AbsPresenter implements IPresenter{
   IUserView _view;
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this._view = view;
   }
 

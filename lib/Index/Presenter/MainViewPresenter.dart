@@ -4,7 +4,7 @@ import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:micro_sparrow/Api.dart';
 import 'package:micro_sparrow/Utils/SparrowException.dart';
 import 'package:micro_sparrow/Utils/mvp.dart';
-import 'package:micro_sparrow/View/IMainView.dart';
+import 'package:micro_sparrow/Index/Contract/IMainView.dart';
 import 'package:micro_sparrow/model/Doc_entity.dart';
 import 'package:micro_sparrow/model/EventEntity.dart';
 import 'package:micro_sparrow/model/ExistToken_entity.dart';
@@ -24,7 +24,7 @@ class MainViewPresenter extends AbsPresenter implements  IPresenter{
   bool _isExpire = false;
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this._view = view;
   }
 
@@ -245,6 +245,11 @@ class MainViewPresenter extends AbsPresenter implements  IPresenter{
       return;
     }
     _view.resultOfNotification(true,entity,SparrowException.OK);
+  }
+
+  @override
+  void detach() {
+    this._view = null;
   }
 
 

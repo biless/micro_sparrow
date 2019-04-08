@@ -4,5 +4,6 @@ abstract class IView<T> {
 }
 
 abstract class IPresenter{
-  init(IView view);
+  void attach(IView view);
+  void detach();
 }

@@ -37,7 +37,7 @@ class _BookPage extends State<BookView> implements IBookView {
   @override
   void initState() {
     super.initState();
-    _bookPresenter.init(this);
+    _bookPresenter.attach(this);
     _bookPresenter.getTopic(widget.id);
     _bookPresenter.getAllDoc(widget.id);
   }

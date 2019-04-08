@@ -22,7 +22,7 @@ class _AllDocPage extends State<AllDocView> implements IAllDocView {
   @override
   void initState() {
     super.initState();
-    _presenter.init(this);
+    _presenter.attach(this);
     _presenter.getHttpData();
   }
 

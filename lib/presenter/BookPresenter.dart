@@ -24,7 +24,7 @@ class BookPresenter extends AbsPresenter implements IPresenter{
 
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this.view = view;
   }
 

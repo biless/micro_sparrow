@@ -12,7 +12,7 @@ class TeamPresenter implements IPresenter{
   ITeamView view;
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this.view = view;
     return null;
   }

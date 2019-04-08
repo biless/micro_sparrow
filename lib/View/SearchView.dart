@@ -28,7 +28,7 @@ class _SearchPage extends State<SearchView> implements ISearchView{
   @override
   void initState() {
     super.initState();
-    _presenter.init(this);
+    _presenter.attach(this);
   }
 
   @override

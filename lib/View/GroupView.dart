@@ -42,7 +42,7 @@ class _groupPage extends State<GroupView> implements IGroupView{
   @override
   void initState() {
     super.initState();
-    _groupPrenster.init(this);
+    _groupPrenster.attach(this);
     _groupPrenster.getGroupHttpData(widget.id);
   }
 

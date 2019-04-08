@@ -10,7 +10,7 @@ class SearchPresenter extends AbsPresenter implements IPresenter{
   ISearchView _view;
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this._view = view;
   }
 

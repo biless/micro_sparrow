@@ -13,7 +13,7 @@ class AllBookPresenter implements IPresenter{
   IAllBookView _view;
 
   @override
-  init(IView view) {
+  attach(IView view) {
     this._view = view;
   }
 

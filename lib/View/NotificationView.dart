@@ -20,7 +20,7 @@ class _NotificationPage extends State<NotificationView> implements INotification
   @override
   void initState() {
     super.initState();
-    _presenter.init(this);
+    _presenter.attach(this);
     _presenter.getNotification();
   }
 
