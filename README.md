@@ -1,16 +1,37 @@
-# micro_sparrow
+# 微语雀-语雀的第三方APP应用
+一款基于Flutter跨平台的语雀客户端，目前已经完成绝大部分功能，现在正在进行项目的代码重构，请耐心等待发布。
 
-A new Flutter application for language sparrow.
+# 你的Star会是我最好的生产动力，谢谢。
+[介绍](https://www.jianshu.com/p/926c819f24e7)
 
-## Getting Started
+# 进度
+最近语雀平台的数据类型和接口一直在改，不断地出现bug，因此我在考虑一种稳定的设计方案。
 
-This project is a starting point for a Flutter application.
+**重构**：由于刚开始对于flutter和dart的不熟悉，结构混乱，导致现在代码量日益趋大的同时维护相当困难，因此现在在对项目进行重构。
 
-A few resources to get you started if this is your first Flutter project:
+# 目前已经完成的功能
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+- **无token实现登录，获取用户的信息**
+- **首页多种信息的展示**
+- **团队界面**
+- **知识库界面**
+- **部分的消息通知类型**
+- **文档查看添加删除编辑**
+- **一些动画**
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+# 部分功能展示
+
+![展示1.png](https://upload-images.jianshu.io/upload_images/7248113-ce4c79c9ab6d6bd5.png)
+
+![展示2.png](https://upload-images.jianshu.io/upload_images/7248113-1f51f382f81c46e3.png)
+
+![展示3.png](https://upload-images.jianshu.io/upload_images/7248113-74543b84a8cfe9ef.png)
+
+![展示4.png](https://upload-images.jianshu.io/upload_images/7248113-b490992a74146940.png)
+
+
+
+
+
+
+
